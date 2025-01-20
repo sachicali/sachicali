@@ -105,6 +105,14 @@ I'm a learner in life, a Creative Director that transforms into a versatile Dev 
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachicali&layout=compact&theme=tokyonight&count_private=true&token=${{ secrets.GH_TOKEN }}"/>
 </div>
 
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=sachicali&theme=tokyonight" alt="WakaTime Stats"/>
+</div>
+
+<div align="center">
+  <img src="https://cr-ss-service.azurewebsites.net/api/ScreenShot?widget=summary&username=sachicali&badges=3&show-avatar=false&style=--bg-color:%230D1117;--border:1px%20solid%20%23363636"/>
+</div>
+
 ## 🌱 Current Status
 
 ```diff
@@ -115,37 +123,59 @@ I'm a learner in life, a Creative Director that transforms into a versatile Dev 
 # Project Maintenance: Best effort basis
 ```
 
-## 🤝 Collaboration
-<div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
-</div>
-Most of my projects are focused on improving developer experience, catering to modern day folks, and the creator economy. I am focused on creating efficient tools for various scenarios. I'm always open to collaboration and feedback!
-
-## 📫 How to Reach Me
+# ✨ Let's Create Something Together
 
 <div align="center">
-  <i>The best way to reach me is through telepathy... but since that's not reliable:</i>
-  <br/>
-  <br/>
-  <a href="https://github.com/username">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-  <a href="https://facebook.com/username">
-    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
-  </a>
-  <a href="https://discord.gg/username">
-    <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
-  </a>
-  <a href="https://twitter.com/username">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
-  </a>
+  <img src="https://capsule-render.vercel.app/api?type=soft&color=gradient&text=Collaboration&fontSize=40&animation=twinkling" />
+
+  <blockquote align="center">
+    <h3 style="color: #70E1C8; font-style: italic; font-weight: 300;">
+      "The proper use of comments is to compensate for our failure to express ourself in code."
+    </h3>
+    <p align="right" style="color: #7AA2F7;">— Robert C. Martin</p>
+  </blockquote>
+
+  <p align="center">
+    Focused on improving developer experience and empowering the creator economy.<br>
+    Building efficient tools for the modern world. Always open to innovative collaborations!
+  </p>
 </div>
 
+# 🌟 Connect With Me
+
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=username&color=blueviolet" alt="Profile views" />
-  <br/>
-  <br/>
-  <i>⚠️ Warning: Responses may come slower than Windows updates</i>
-  <br/>
-  <i>🌙 Best reached during full moons</i>
+  <h4>The best way to reach me is through telepathy... but since that's not reliable:</h4>
+
+  <a href="https://github.com/sachicali" target="_blank">
+    <img src="https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white" alt="github" />
+  </a>
+  <a href="your-discord-link" target="_blank">
+    <img src="https://img.shields.io/badge/discord-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white" alt="discord" />
+  </a>
+  <a href="your-twitter-link" target="_blank">
+    <img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" alt="twitter" />
+  </a>
+
+  <div align="center">
+    <img src="https://komarev.com/ghpvc/?username=sachicali&label=Profile%20Views&color=70E1C8&style=for-the-badge" alt="sachicali" />
+    <br>
+    <sub><i>~ yes... I didn't know I get attention too..</i></sub>
+  </div>
+
+  <br>
+
+  <table align="center">
+    <tr>
+      <td>
+        ⚠️ <i>Responses may come slower than Windows updates</i>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        🌙 <i>Best reached during full moons</i>
+      </td>
+    </tr>
+  </table>
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" />
