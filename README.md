@@ -1,6 +1,6 @@
 <div align="center">
   
-  ![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=300&section=header&text=Welcome%20to%20my%20Digital%20Garden&fontSize=50&fontAlignY=35&desc=Creative%20Director%20by%20Day%20|%20Dev%20by%20Moonlight&descAlignY=52&animation=fadeIn)
+  ![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=300&section=header&text=Welcome%20to%20my%20Digital%20Mess&fontSize=50&fontAlignY=35&desc=Creative%20Director%20by%20Day%20|%20Dev%20by%20Night&descAlignY=52&animation=fadeIn)
 
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=A9FEF7&center=true&vCenter=true&width=940&lines=Hi%2C+I'm+CHI!+🌙;Creative+Director+by+Day%2C+Dev+by+Moonlight+✨;Building+the+Creator+Economy+🎨;AI+%2B+Design+%2B+Code+%3D+Magic+💫" alt="Typing SVG" />
 
