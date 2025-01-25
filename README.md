@@ -218,7 +218,7 @@ When I'm not coding or directing, I'm having dance parties and sharing laughs wi
   
 <br/>
   
-> *"The best code I've written is the smile on my daughter's face, the best direction I've taken is having her"*
+> *"The best code I've written is the smile on my daughter's face, the best direction I've taken is Fatherhood"*
 
 <br/>
   
