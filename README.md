@@ -102,19 +102,19 @@ When I'm not coding or directing, I'm having dance parties and sharing laughs wi
 
 <div style="background: #1a1b27; border-radius: 6px; border: 1px solid #30363d; margin-bottom: 16px;">
 <div style="padding: 16px;">
-<h4><a href="https://github.com/username/CaLI-Editor" style="color: #58a6ff;">CaLI-Editor</a></h4>
+<h4><a href="https://github.com/sachicali/CaLI-Editor" style="color: #58a6ff;">CaLI-Editor</a></h4>
 <blockquote>An advanced AI Coding assistant that leverages and benchmarks latest features</blockquote>
 <code>Built with: Rust 🦀</code> <code>Status: Active Development 🟢</code>
 </div>
 
 <div style="padding: 16px; border-top: 1px solid #30363d;">
-<h4><a href="https://github.com/username/Pipelines-Cali" style="color: #58a6ff;">Pipelines-Cali</a></h4>
+<h4><a href="https://github.com/sachicali/Pipelines-Cali" style="color: #58a6ff;">Pipelines-Cali</a></h4>
 <blockquote>Ruby-based Project Management for Creator Economy</blockquote>
 <code>Built with: Ruby 💎</code>
 </div>
 
 <div style="padding: 16px; border-top: 1px solid #30363d;">
-<h4><a href="https://github.com/username/CALICommander" style="color: #58a6ff;">CALICommander</a></h4>
+<h4><a href="https://github.com/sachicali/CALICommander" style="color: #58a6ff;">CALICommander</a></h4>
 <blockquote>Go-powered Discord command-line interface</blockquote>
 <code>Multi-language implementation</code>
 </div>
@@ -124,7 +124,7 @@ When I'm not coding or directing, I'm having dance parties and sharing laughs wi
 
 <div style="background: #1a1b27; border-radius: 6px; border: 1px solid #30363d; margin-bottom: 16px;">
 <div style="padding: 16px;">
-<h4><a href="https://github.com/username/progressive-svelte" style="color: #58a6ff;">progressive-svelte</a></h4>
+<h4><a href="https://github.com/sachicali/progressive-svelte" style="color: #58a6ff;">progressive-svelte</a></h4>
 <blockquote>A Mental Health application that incorporates Game Link features</blockquote>
 <code>Gamified progression</code> <code>Built with: Svelte ⚡</code>
 </div>
@@ -134,13 +134,13 @@ When I'm not coding or directing, I'm having dance parties and sharing laughs wi
 
 <div style="background: #1a1b27; border-radius: 6px; border: 1px solid #30363d; margin-bottom: 16px;">
 <div style="padding: 16px;">
-<h4><a href="https://github.com/username/PoetryRaw" style="color: #58a6ff;">PoetryRaw</a></h4>
+<h4><a href="https://github.com/sachicali/PoetryRaw" style="color: #58a6ff;">PoetryRaw</a></h4>
 <blockquote>My digital garden of thoughts</blockquote>
 <code>Creative writing platform</code>
 </div>
 
 <div style="padding: 16px; border-top: 1px solid #30363d;">
-<h4><a href="https://github.com/username/ImagineCali" style="color: #58a6ff;">ImagineCali</a></h4>
+<h4><a href="https://github.com/sachicali/ImagineCali" style="color: #58a6ff;">ImagineCali</a></h4>
 <blockquote>TypeScript-based creative tools</blockquote>
 <code>Creator Economy focus</code>
 </div>
@@ -155,13 +155,13 @@ When I'm not coding or directing, I'm having dance parties and sharing laughs wi
 
 <div style="background: #1a1b27; border-radius: 6px; border: 1px solid #30363d; margin-bottom: 16px;">
 <div style="padding: 16px;">
-<h4><a href="https://github.com/username/CaliSite" style="color: #58a6ff;">CaliSite</a></h4>
+<h4><a href="https://github.com/sachicali/CaliSite" style="color: #58a6ff;">CaliSite</a></h4>
 <blockquote>Modern web platform with focus on CSS</blockquote>
 <code>Learning playground</code>
 </div>
 
 <div style="padding: 16px; border-top: 1px solid #30363d;">
-<h4><a href="https://github.com/username/caliSuperComp" style="color: #58a6ff;">caliSuperComp</a></h4>
+<h4><a href="https://github.com/sachicali/caliSuperComp" style="color: #58a6ff;">caliSuperComp</a></h4>
 <blockquote>AI Super Comp. Super super heavy.</blockquote>
 <code>⚠️ High GPU requirements</code>
 </div>
@@ -171,13 +171,13 @@ When I'm not coding or directing, I'm having dance parties and sharing laughs wi
 
 <div style="background: #1a1b27; border-radius: 6px; border: 1px solid #30363d; margin-bottom: 16px;">
 <div style="padding: 16px;">
-<h4><a href="https://github.com/username/calinternal-manager" style="color: #58a6ff;">calinternal-manager</a></h4>
+<h4><a href="https://github.com/sachicali/calinternal-manager" style="color: #58a6ff;">calinternal-manager</a></h4>
 <blockquote>Python-based internal management system</blockquote>
 <code>Learning project</code>
 </div>
 
 <div style="padding: 16px; border-top: 1px solid #30363d;">
-<h4><a href="https://github.com/username/CALIProd" style="color: #58a6ff;">CALIProd</a></h4>
+<h4><a href="https://github.com/sachicali/CALIProd" style="color: #58a6ff;">CALIProd</a></h4>
 <blockquote>Production-grade Ruby tooling</blockquote>
 <code>Status: Maintained 🟡</code>
 </div>
@@ -213,8 +213,8 @@ When I'm not coding or directing, I'm having dance parties and sharing laughs wi
 <p><i>The best way to reach me is through telepathy... but since that's not reliable:</i></p>
   
 [![GitHub](https://img.shields.io/badge/github-%2324292e.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sachicali)
-[![Discord](https://img.shields.io/badge/discord-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white)](your-discord-link)
-[![Twitter](https://img.shields.io/badge/twitter-%231DA1F2.svg?style=for-the-badge&logo=twitter&logoColor=white)](your-twitter-link)
+[![Discord](https://img.shields.io/badge/discord-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white)](discod.com/chicali)
+[![Twitter](https://img.shields.io/badge/twitter-%231DA1F2.svg?style=for-the-badge&logo=twitter&logoColor=white)](x.com/chicali)
   
 <br/>
   
