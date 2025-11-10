@@ -1,0 +1,52 @@
+<svg width="180" height="60" viewBox="0 0 180 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dadGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff69b4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff91a4;stop-opacity:1" />
+    </linearGradient>
+
+    <filter id="badgeGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Badge background -->
+  <rect width="180" height="60" rx="30" fill="url(#dadGradient)" opacity="0.2"/>
+  <rect x="2" y="2" width="176" height="56" rx="28" stroke="url(#dadGradient)" stroke-width="2" fill="none"/>
+
+  <!-- Heart icon -->
+  <g transform="translate(20, 20)">
+    <path d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0c1.74 0 3.41.81 4.5 2.09C11.09.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z"
+          fill="url(#dadGradient)"
+          filter="url(#badgeGlow)">
+      <animateTransform
+        attributeName="transform"
+        type="scale"
+        values="1;1.1;1"
+        dur="1.5s"
+        repeatCount="indefinite"
+        additive="sum"/>
+    </path>
+  </g>
+
+  <!-- Text -->
+  <text x="50" y="37" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="url(#dadGradient)">
+    DAD MODE: ON
+  </text>
+
+  <!-- Sparkles -->
+  <circle cx="160" cy="15" r="2" fill="#FFD700" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="165" cy="25" r="1.5" fill="#FFD700" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="1.3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="155" cy="45" r="1.8" fill="#FFD700" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="0.9s" repeatCount="indefinite"/>
+  </circle>
+</svg>
