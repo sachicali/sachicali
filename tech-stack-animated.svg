@@ -10,8 +10,46 @@
       <stop offset="100%" style="stop-color:#ff91a4;stop-opacity:1" />
     </linearGradient>
 
+    <radialGradient id="iconGlow" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#A9FEF7;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#7289DA;stop-opacity:0" />
+    </radialGradient>
+
     <filter id="techGlow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="deepShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="iconShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.6"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -19,100 +57,226 @@
     </filter>
   </defs>
 
-  <!-- Background -->
-  <rect width="400" height="120" rx="15" fill="#0d1117" opacity="0.8"/>
-  <rect x="3" y="3" width="394" height="114" rx="12" stroke="url(#techGradient1)" stroke-width="2" fill="none" opacity="0.5"/>
+  <!-- Background with depth -->
+  <rect width="400" height="120" rx="15" fill="#0d1117" opacity="0.4"/>
+  <rect x="2" y="2" width="396" height="116" rx="13" fill="#0d1117" opacity="0.9"/>
 
-  <!-- Tech Stack Icons (Simplified) -->
+  <!-- Inner glow for atmosphere -->
+  <rect x="5" y="5" width="390" height="110" rx="12" fill="url(#iconGlow)" opacity="0.2">
+    <animate attributeName="opacity" values="0.2;0.3;0.2" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Border layers -->
+  <rect x="3" y="3" width="394" height="114" rx="12" stroke="url(#techGradient1)" stroke-width="2.5" fill="none" opacity="0.6" filter="url(#techGlow)"/>
+  <rect x="4" y="4" width="392" height="112" rx="11" stroke="url(#techGradient1)" stroke-width="1" fill="none" opacity="0.3"/>
+
+  <!-- Tech Stack Icons with enhanced 3D depth -->
+
   <!-- Rust -->
-  <g transform="translate(30, 35)">
-    <circle cx="15" cy="15" r="15" fill="none" stroke="#CE422B" stroke-width="2"/>
+  <g transform="translate(30, 35)" filter="url(#iconShadow)">
+    <!-- Shadow circle -->
+    <circle cx="15" cy="17" r="15" fill="#000000" opacity="0.3"/>
+    <!-- Glow circle -->
+    <circle cx="15" cy="15" r="17" fill="#CE422B" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.5;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Main circle -->
+    <circle cx="15" cy="15" r="15" fill="none" stroke="#CE422B" stroke-width="2.5"/>
+    <circle cx="15" cy="15" r="13" fill="none" stroke="#CE422B" stroke-width="1" opacity="0.5"/>
+    <!-- Text with depth -->
+    <text x="15" y="24" font-family="monospace" font-size="18" font-weight="bold" fill="#000000" text-anchor="middle" opacity="0.3">R</text>
     <text x="15" y="23" font-family="monospace" font-size="18" font-weight="bold" fill="#CE422B" text-anchor="middle">R</text>
     <animateTransform
       attributeName="transform"
       type="translate"
-      values="30,35; 30,30; 30,35"
+      values="30,35; 30,28; 30,35"
       dur="2s"
       repeatCount="indefinite"/>
   </g>
 
   <!-- TypeScript -->
-  <g transform="translate(90, 35)">
+  <g transform="translate(90, 35)" filter="url(#iconShadow)">
+    <!-- Shadow -->
+    <rect x="1" y="3" width="30" height="30" rx="3" fill="#000000" opacity="0.3"/>
+    <!-- Glow -->
+    <rect x="-2" y="-2" width="34" height="34" rx="4" fill="#3178C6" opacity="0.2">
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="2s" begin="0.2s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Main -->
     <rect width="30" height="30" rx="3" fill="#3178C6"/>
+    <rect x="1" y="1" width="28" height="28" rx="2" fill="none" stroke="#5599DD" stroke-width="1" opacity="0.5"/>
+    <!-- Text with highlight -->
+    <text x="15" y="23" font-family="monospace" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle" opacity="0.2">TS</text>
     <text x="15" y="22" font-family="monospace" font-size="16" font-weight="bold" fill="white" text-anchor="middle">TS</text>
     <animateTransform
       attributeName="transform"
       type="translate"
-      values="90,35; 90,30; 90,35"
+      values="90,35; 90,28; 90,35"
       dur="2s"
       begin="0.2s"
       repeatCount="indefinite"/>
   </g>
 
   <!-- Ruby -->
-  <g transform="translate(150, 35)">
+  <g transform="translate(150, 35)" filter="url(#iconShadow)">
+    <!-- Shadow -->
+    <polygon points="15,3 30,15 15,30 0,15" fill="#000000" opacity="0.3"/>
+    <!-- Glow -->
+    <polygon points="15,-1 32,15 15,32 -1,15" fill="#CC342D" opacity="0.2">
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="2s" begin="0.4s" repeatCount="indefinite"/>
+    </polygon>
+    <!-- Main -->
     <polygon points="15,0 30,15 15,30 0,15" fill="#CC342D"/>
+    <polygon points="15,2 28,15 15,28 2,15" fill="none" stroke="#DD4444" stroke-width="1" opacity="0.6"/>
+    <!-- Text -->
+    <text x="15" y="21" font-family="monospace" font-size="14" font-weight="bold" fill="#000000" text-anchor="middle" opacity="0.3">Rb</text>
     <text x="15" y="20" font-family="monospace" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Rb</text>
     <animateTransform
       attributeName="transform"
       type="translate"
-      values="150,35; 150,30; 150,35"
+      values="150,35; 150,28; 150,35"
       dur="2s"
       begin="0.4s"
       repeatCount="indefinite"/>
   </g>
 
   <!-- Python -->
-  <g transform="translate(210, 35)">
+  <g transform="translate(210, 35)" filter="url(#iconShadow)">
+    <!-- Shadow -->
+    <circle cx="15" cy="17" r="15" fill="#000000" opacity="0.3"/>
+    <!-- Glow -->
+    <circle cx="15" cy="15" r="17" fill="#3776AB" opacity="0.2">
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Main -->
     <circle cx="15" cy="15" r="15" fill="#3776AB"/>
+    <circle cx="15" cy="15" r="13" fill="none" stroke="#5599CC" stroke-width="1" opacity="0.5"/>
+    <!-- Highlight -->
+    <ellipse cx="10" cy="10" rx="5" ry="4" fill="#5599CC" opacity="0.3"/>
+    <!-- Text -->
+    <text x="15" y="23" font-family="monospace" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle" opacity="0.3">Py</text>
     <text x="15" y="22" font-family="monospace" font-size="16" font-weight="bold" fill="#FFD43B" text-anchor="middle">Py</text>
     <animateTransform
       attributeName="transform"
       type="translate"
-      values="210,35; 210,30; 210,35"
+      values="210,35; 210,28; 210,35"
       dur="2s"
       begin="0.6s"
       repeatCount="indefinite"/>
   </g>
 
   <!-- Go -->
-  <g transform="translate(270, 35)">
+  <g transform="translate(270, 35)" filter="url(#iconShadow)">
+    <!-- Shadow -->
+    <rect x="1" y="3" width="30" height="30" rx="3" fill="#000000" opacity="0.3"/>
+    <!-- Glow -->
+    <rect x="-2" y="-2" width="34" height="34" rx="4" fill="#00ADD8" opacity="0.2">
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="2s" begin="0.8s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Main -->
     <rect width="30" height="30" rx="3" fill="#00ADD8"/>
+    <rect x="1" y="1" width="28" height="28" rx="2" fill="none" stroke="#33CCEE" stroke-width="1" opacity="0.5"/>
+    <!-- Text -->
+    <text x="15" y="23" font-family="monospace" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle" opacity="0.2">Go</text>
     <text x="15" y="22" font-family="monospace" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Go</text>
     <animateTransform
       attributeName="transform"
       type="translate"
-      values="270,35; 270,30; 270,35"
+      values="270,35; 270,28; 270,35"
       dur="2s"
       begin="0.8s"
       repeatCount="indefinite"/>
   </g>
 
   <!-- Svelte -->
-  <g transform="translate(330, 35)">
+  <g transform="translate(330, 35)" filter="url(#iconShadow)">
+    <!-- Shadow -->
+    <circle cx="15" cy="17" r="15" fill="#000000" opacity="0.3"/>
+    <!-- Glow -->
+    <circle cx="15" cy="15" r="17" fill="#FF3E00" opacity="0.2">
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Main -->
     <circle cx="15" cy="15" r="15" fill="#FF3E00"/>
+    <circle cx="15" cy="15" r="13" fill="none" stroke="#FF6633" stroke-width="1" opacity="0.5"/>
+    <!-- Highlight -->
+    <ellipse cx="10" cy="10" rx="5" ry="4" fill="#FF6633" opacity="0.3"/>
+    <!-- Text -->
+    <text x="15" y="23" font-family="monospace" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle" opacity="0.3">S</text>
     <text x="15" y="22" font-family="monospace" font-size="15" font-weight="bold" fill="white" text-anchor="middle">S</text>
     <animateTransform
       attributeName="transform"
       type="translate"
-      values="330,35; 330,30; 330,35"
+      values="330,35; 330,28; 330,35"
       dur="2s"
       begin="1s"
       repeatCount="indefinite"/>
   </g>
 
-  <!-- Bottom text -->
-  <text x="200" y="100" font-family="monospace" font-size="14" fill="url(#techGradient1)" text-anchor="middle" font-weight="bold">
-    FULL-STACK CREATOR
-  </text>
+  <!-- Bottom text with 3D depth -->
+  <g transform="translate(200, 100)">
+    <!-- Shadow text -->
+    <text x="0" y="2" font-family="monospace" font-size="14" fill="#000000" text-anchor="middle" font-weight="bold" opacity="0.4">
+      FULL-STACK CREATOR
+    </text>
+    <!-- Glow text -->
+    <text x="0" y="0" font-family="monospace" font-size="14" fill="url(#techGradient1)" text-anchor="middle" font-weight="bold" opacity="0.5" filter="url(#techGlow)">
+      FULL-STACK CREATOR
+    </text>
+    <!-- Main text -->
+    <text x="0" y="0" font-family="monospace" font-size="14" fill="url(#techGradient1)" text-anchor="middle" font-weight="bold" filter="url(#textGlow)">
+      FULL-STACK CREATOR
+    </text>
+    <!-- Highlight text -->
+    <text x="0" y="-1" font-family="monospace" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold" opacity="0.3">
+      FULL-STACK CREATOR
+    </text>
+  </g>
 
-  <!-- Animated particles -->
-  <circle cx="10" cy="10" r="2" fill="url(#techGradient2)" opacity="0.6">
-    <animate attributeName="cx" values="10;390;10" dur="8s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="4s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="390" cy="110" r="2" fill="url(#techGradient1)" opacity="0.5">
-    <animate attributeName="cx" values="390;10;390" dur="10s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="5s" repeatCount="indefinite"/>
-  </circle>
+  <!-- Enhanced animated particles with depth -->
+  <g filter="url(#techGlow)">
+    <!-- Fast particle top -->
+    <circle cx="10" cy="10" r="2.5" fill="url(#techGradient2)" opacity="0.8">
+      <animate attributeName="cx" values="10;390;10" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="2.5;3;2.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Slow particle bottom -->
+    <circle cx="390" cy="110" r="2" fill="url(#techGradient1)" opacity="0.7">
+      <animate attributeName="cx" values="390;10;390" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0.2;0.7" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="2;2.8;2" dur="3s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Middle floating particles -->
+    <circle cx="50" cy="60" r="1.5" fill="url(#techGradient1)" opacity="0.5">
+      <animate attributeName="cy" values="60;50;60" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.2;0.5" dur="4s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="350" cy="60" r="1.8" fill="url(#techGradient2)" opacity="0.6">
+      <animate attributeName="cy" values="60;70;60" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Connecting lines between icons for flow -->
+  <g opacity="0.2">
+    <path d="M60 50 L90 50" stroke="url(#techGradient1)" stroke-width="1">
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M120 50 L150 50" stroke="url(#techGradient1)" stroke-width="1">
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" begin="0.3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M180 50 L210 50" stroke="url(#techGradient1)" stroke-width="1">
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" begin="0.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M240 50 L270 50" stroke="url(#techGradient1)" stroke-width="1">
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" begin="0.9s" repeatCount="indefinite"/>
+    </path>
+    <path d="M300 50 L330 50" stroke="url(#techGradient1)" stroke-width="1">
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" begin="1.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
 </svg>
