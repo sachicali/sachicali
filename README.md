@@ -25,6 +25,38 @@
 
 When I'm not coding or directing, I'm having dance parties and sharing laughs with my incredible one-year-old daughter. She's my greatest source of inspiration and joy - nothing beats creating memories together through music, giggles, and countless precious moments.
 
+# 💭 Why I Build
+
+Every line of code I write carries the weight of creating a better world for my daughter. As a Creative Director by day and developer by moonlight, I've discovered that the intersection of design, technology, and fatherhood isn't just a balancing act—it's a powerful synergy.
+
+**My mission:** Build tools and platforms that empower the next generation of creators while showing my daughter that dreams are built through dedication, learning, and a dash of moonlit coding sessions.
+
+> *When she asks "What does daddy do?", I want to show her projects that made a difference.*
+
+## 📊 This Week's Focus
+
+<div align="center">
+<table>
+<tr>
+<td align="center" width="33%">
+<h4>🚀 Building</h4>
+<p><strong>CaLI-Editor</strong></p>
+<p><small>Enhancing AI coding features</small></p>
+</td>
+<td align="center" width="33%">
+<h4>📚 Learning</h4>
+<p><strong>Rust Advanced Patterns</strong></p>
+<p><small>Performance optimization</small></p>
+</td>
+<td align="center" width="33%">
+<h4>🎯 Goal</h4>
+<p><strong>Mental Health Platform</strong></p>
+<p><small>Progressive-Svelte v2.0</small></p>
+</td>
+</tr>
+</table>
+</div>
+
 # 🛠️ Tech Arsenal
 
 <div align="center">
@@ -45,6 +77,8 @@ When I'm not coding or directing, I'm having dance parties and sharing laughs wi
 
 # 🚀 Featured Projects
 
+> Building tools that make a difference, one commit at a time
+
 <div align="center">
 <table style="width: 100%; border-collapse: separate; border-spacing: 16px;">
 <tr>
@@ -52,15 +86,23 @@ When I'm not coding or directing, I'm having dance parties and sharing laughs wi
 <img width="25" src="https://skillicons.dev/icons?i=rust" alt="Rust Icon"/>
 <h3><a href="https://github.com/sachicali/CaLI-Editor" style="color: #58a6ff; text-decoration: none;">CaLI-Editor</a></h3>
 <p style="color: #8b949e;">Advanced AI Coding assistant for streamlined development and learning</p>
+<p><small>🎯 Benchmarking cutting-edge AI features for next-gen development</small></p>
 <img src="https://img.shields.io/badge/Rust-black?style=flat-square&logo=rust&logoColor=white"/>
 <img src="https://img.shields.io/badge/Status-Active-success?style=flat-square"/>
+<br/><br/>
+<img src="https://img.shields.io/github/stars/sachicali/CaLI-Editor?style=social" alt="Stars"/>
+<img src="https://img.shields.io/github/forks/sachicali/CaLI-Editor?style=social" alt="Forks"/>
 </td>
 <td align="center" width="50%" style="background: #1a1b27; border-radius: 6px; padding: 16px; border: 1px solid #30363d;">
 <img width="25" src="https://skillicons.dev/icons?i=ruby" alt="Ruby Icon"/>
 <h3><a href="https://github.com/sachicali/Pipelines-Cali" style="color: #58a6ff; text-decoration: none;">Pipelines-Cali</a></h3>
 <p style="color: #8b949e;">Ruby-based Project Management for Creator Economy</p>
+<p><small>💼 Empowering creators with streamlined workflow tools</small></p>
 <img src="https://img.shields.io/badge/Ruby-CC342D?style=flat-square&logo=ruby&logoColor=white"/>
 <img src="https://img.shields.io/badge/Status-In Progress-blue?style=flat-square"/>
+<br/><br/>
+<img src="https://img.shields.io/github/stars/sachicali/Pipelines-Cali?style=social" alt="Stars"/>
+<img src="https://img.shields.io/github/forks/sachicali/Pipelines-Cali?style=social" alt="Forks"/>
 </td>
 </tr>
 <tr>
@@ -68,15 +110,23 @@ When I'm not coding or directing, I'm having dance parties and sharing laughs wi
 <img width="25" src="https://skillicons.dev/icons?i=ts" alt="TypeScript Icon"/>
 <h3><a href="https://github.com/sachicali/ImagineCali" style="color: #58a6ff; text-decoration: none;">ImagineCali</a></h3>
 <p style="color: #8b949e;">TypeScript-powered creative tools for design innovation</p>
+<p><small>🎨 Where design meets code - tools for the creative mind</small></p>
 <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white"/>
 <img src="https://img.shields.io/badge/Status-Development-ff69b4?style=flat-square"/>
+<br/><br/>
+<img src="https://img.shields.io/github/stars/sachicali/ImagineCali?style=social" alt="Stars"/>
+<img src="https://img.shields.io/github/forks/sachicali/ImagineCali?style=social" alt="Forks"/>
 </td>
 <td align="center" style="background: #1a1b27; border-radius: 6px; padding: 16px; border: 1px solid #30363d;">
 <img width="25" src="https://skillicons.dev/icons?i=go" alt="Go Icon"/>
 <h3><a href="https://github.com/sachicali/CALICommander" style="color: #58a6ff; text-decoration: none;">CALICommander</a></h3>
 <p style="color: #8b949e;">Go-powered Discord command-line interface</p>
+<p><small>⚡ Lightning-fast Discord automation and management</small></p>
 <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white"/>
 <img src="https://img.shields.io/badge/Status-Ready-7289DA?style=flat-square&logo=discord&logoColor=white"/>
+<br/><br/>
+<img src="https://img.shields.io/github/stars/sachicali/CALICommander?style=social" alt="Stars"/>
+<img src="https://img.shields.io/github/forks/sachicali/CALICommander?style=social" alt="Forks"/>
 </td>
 </tr>
 <tr>
@@ -84,8 +134,12 @@ When I'm not coding or directing, I'm having dance parties and sharing laughs wi
 <img width="25" src="https://skillicons.dev/icons?i=svelte" alt="Svelte Icon"/>
 <h3><a href="https://github.com/sachicali/progressive-svelte" style="color: #58a6ff; text-decoration: none;">Progressive-Svelte</a></h3>
 <p style="color: #8b949e;">Mental Health application with gamified progression system</p>
+<p><small>💚 Turning mental wellness into an engaging journey - because healing can be fun</small></p>
 <img src="https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white"/>
 <img src="https://img.shields.io/badge/Health-Gaming-success?style=flat-square"/>
+<br/><br/>
+<img src="https://img.shields.io/github/stars/sachicali/progressive-svelte?style=social" alt="Stars"/>
+<img src="https://img.shields.io/github/forks/sachicali/progressive-svelte?style=social" alt="Forks"/>
 </td>
 </tr>
 </table>
@@ -187,6 +241,54 @@ When I'm not coding or directing, I'm having dance parties and sharing laughs wi
 </div>
 </details>
 
+# 🌟 My Journey
+
+<div align="center">
+<table>
+<tr>
+<td align="center" width="25%">
+<h3>🎨</h3>
+<h4>Creative Roots</h4>
+<p><small>Started as a designer, fell in love with bringing ideas to life through visual storytelling</small></p>
+</td>
+<td align="center" width="25%">
+<h3>💻</h3>
+<h4>Code Discovery</h4>
+<p><small>Realized code is just another creative medium - more powerful than any design tool</small></p>
+</td>
+<td align="center" width="25%">
+<h3>🌙</h3>
+<h4>Moonlight Developer</h4>
+<p><small>Creative Director by day, building the future by night - the best of both worlds</small></p>
+</td>
+<td align="center" width="25%">
+<h3>👨‍👧</h3>
+<h4>Dad Mode Activated</h4>
+<p><small>Everything changed - now I build for her future and the world she'll inherit</small></p>
+</td>
+</tr>
+</table>
+</div>
+
+<br/>
+
+<div align="center">
+
+```mermaid
+graph LR
+    A[🎨 Design] -->|Discovered| B[💻 Code]
+    B -->|Mastered| C[🌙 Multi-lingual Dev]
+    C -->|Life Changed| D[👨‍👧 Dad Developer]
+    D -->|Building| E[🚀 Creator Economy Tools]
+    style A fill:#ff69b4
+    style B fill:#00ADD8
+    style C fill:#A9FEF7
+    style D fill:#FFD700
+    style E fill:#7289DA
+```
+
+</div>
+
 # 📈 GitHub Activity
 
 <div align="center">
@@ -211,10 +313,12 @@ When I'm not coding or directing, I'm having dance parties and sharing laughs wi
 
 <div align="center">
 <p><i>The best way to reach me is through telepathy... but since that's not reliable:</i></p>
-  
+
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sponsors/sachicali)
+
 [![GitHub](https://img.shields.io/badge/github-%2324292e.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sachicali)
-[![Discord](https://img.shields.io/badge/discord-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white)](discod.com/chicali)
-[![Twitter](https://img.shields.io/badge/twitter-%231DA1F2.svg?style=for-the-badge&logo=twitter&logoColor=white)](x.com/chicali)
+[![Discord](https://img.shields.io/badge/discord-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/chicali)
+[![Twitter](https://img.shields.io/badge/twitter-%231DA1F2.svg?style=for-the-badge&logo=x&logoColor=white)](https://x.com/chicali)
   
 <br/>
   
