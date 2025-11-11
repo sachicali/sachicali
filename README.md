@@ -58,19 +58,9 @@ Every line of code I write carries the weight of creating a better world for my 
 # 🛠️ Tech Arsenal
 
 <div align="center">
-  
-<img src="https://skillicons.dev/icons?i=ts,js,ruby,rust,python,go,svelte,vue,react,css&theme=dark" />
-  
-<br/>
-<details>
-<summary>View detailed tech stack</summary>
-<br/>
-    
-### Languages & Tools
-    
-[![My Skills](https://skillicons.dev/icons?i=ts,js,ruby,rust,python,go,svelte,vue,react,css,git,docker,kubernetes,aws,gcp,firebase,mongodb,postgres&perline=6)](https://github.com/sachicali)
-    
-</details>
+
+![Tech Arsenal](./tech-arsenal.svg)
+
 </div>
 
 # 🚀 Featured Projects
@@ -242,48 +232,8 @@ Every line of code I write carries the weight of creating a better world for my 
 # 🌟 My Journey
 
 <div align="center">
-<table>
-<tr>
-<td align="center" width="25%">
-<h3>🎨</h3>
-<h4>Creative Roots</h4>
-<p><small>Started as a designer, fell in love with bringing ideas to life through visual storytelling</small></p>
-</td>
-<td align="center" width="25%">
-<h3>💻</h3>
-<h4>Code Discovery</h4>
-<p><small>Realized code is just another creative medium - more powerful than any design tool</small></p>
-</td>
-<td align="center" width="25%">
-<h3>🌙</h3>
-<h4>Moonlight Developer</h4>
-<p><small>Creative Director by day, building the future by night - the best of both worlds</small></p>
-</td>
-<td align="center" width="25%">
-<h3>👨‍👧</h3>
-<h4>Dad Mode Activated</h4>
-<p><small>Everything changed - now I build for her future and the world she'll inherit</small></p>
-</td>
-</tr>
-</table>
-</div>
 
-<br/>
-
-<div align="center">
-
-```mermaid
-graph LR
-    A[🎨 Design] -->|Discovered| B[💻 Code]
-    B -->|Mastered| C[🌙 Multi-lingual Dev]
-    C -->|Life Changed| D[👨‍👧 Dad Developer]
-    D -->|Building| E[🚀 Creator Economy Tools]
-    style A fill:#ff69b4
-    style B fill:#00ADD8
-    style C fill:#A9FEF7
-    style D fill:#FFD700
-    style E fill:#7289DA
-```
+![Journey Timeline](./journey-timeline.svg)
 
 </div>
 
@@ -297,15 +247,11 @@ graph LR
 
 # 🎵 Current Status
 
-```diff
-@@ Life & Dev Balance @@
-+ Always Learning & Growing
-+ Building in Private
-+ Dancing & Singing with my little one 💗
-- Response Time: Depends on nap schedule 😴
-! Updates: When both baby and stars align ⭐ (baby boss always win)
-# Dad Mode: Always Active 👨‍👧
-```
+<div align="center">
+
+![Current Status](./status-section.svg)
+
+</div>
 
 # 💫 Connect With Me
 

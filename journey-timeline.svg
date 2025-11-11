@@ -1,0 +1,173 @@
+<svg width="1200" height="250" viewBox="0 0 1200 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="journeyGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#7289DA;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#BD00FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF3E00;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="nodeGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7289DA;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="nodeGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7289DA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BD00FF;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="nodeGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#BD00FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF3E00;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="nodeGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF3E00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+    </linearGradient>
+
+    <filter id="journeyGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="nodeGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="250" fill="#0a0e27" opacity="0.3"/>
+  <rect x="2" y="2" width="1196" height="246" rx="8" fill="#0d1117" stroke="url(#journeyGradient)" stroke-width="2" opacity="0.9"/>
+
+  <!-- Header -->
+  <text x="40" y="45" font-family="'Fira Code', monospace" font-size="24" font-weight="bold" fill="url(#journeyGradient)" filter="url(#journeyGlow)">
+    JOURNEY.timeline()
+  </text>
+
+  <!-- Main timeline line -->
+  <line x1="100" y1="125" x2="1100" y2="125" stroke="url(#journeyGradient)" stroke-width="3" opacity="0.6"/>
+  <line x1="100" y1="125" x2="1100" y2="125" stroke="url(#journeyGradient)" stroke-width="1" opacity="0.9">
+    <animate attributeName="stroke-dashoffset" values="0;-20" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-dasharray" values="0 1000;1000 0" dur="4s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Node 1: Creative Roots -->
+  <g transform="translate(150, 125)">
+    <circle cx="0" cy="0" r="25" fill="url(#nodeGradient1)" filter="url(#nodeGlow)" opacity="0.8">
+      <animate attributeName="r" values="25;28;25" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="20" fill="#0d1117" stroke="url(#nodeGradient1)" stroke-width="2"/>
+    <text x="0" y="8" font-family="monospace" font-size="24" fill="url(#nodeGradient1)" text-anchor="middle">🎨</text>
+
+    <!-- Label -->
+    <text x="0" y="-45" font-family="'Fira Code', monospace" font-size="13" font-weight="bold" fill="url(#nodeGradient1)" text-anchor="middle">
+      CREATIVE_ROOTS
+    </text>
+    <text x="0" y="60" font-family="'Fira Code', monospace" font-size="10" fill="#8892a6" text-anchor="middle" style="max-width: 120px;">
+      Design &amp; Visual
+    </text>
+    <text x="0" y="75" font-family="'Fira Code', monospace" font-size="10" fill="#8892a6" text-anchor="middle">
+      Storytelling
+    </text>
+  </g>
+
+  <!-- Node 2: Code Discovery -->
+  <g transform="translate(400, 125)">
+    <circle cx="0" cy="0" r="25" fill="url(#nodeGradient1)" filter="url(#nodeGlow)" opacity="0.8">
+      <animate attributeName="r" values="25;28;25" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="20" fill="#0d1117" stroke="url(#nodeGradient1)" stroke-width="2"/>
+    <text x="0" y="8" font-family="monospace" font-size="24" fill="url(#nodeGradient1)" text-anchor="middle">💻</text>
+
+    <!-- Label -->
+    <text x="0" y="-45" font-family="'Fira Code', monospace" font-size="13" font-weight="bold" fill="url(#nodeGradient1)" text-anchor="middle">
+      CODE_DISCOVERY
+    </text>
+    <text x="0" y="60" font-family="'Fira Code', monospace" font-size="10" fill="#8892a6" text-anchor="middle">
+      Code = Creative
+    </text>
+    <text x="0" y="75" font-family="'Fira Code', monospace" font-size="10" fill="#8892a6" text-anchor="middle">
+      Medium
+    </text>
+  </g>
+
+  <!-- Node 3: Moonlight Developer -->
+  <g transform="translate(650, 125)">
+    <circle cx="0" cy="0" r="25" fill="url(#nodeGradient2)" filter="url(#nodeGlow)" opacity="0.8">
+      <animate attributeName="r" values="25;28;25" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="20" fill="#0d1117" stroke="url(#nodeGradient2)" stroke-width="2"/>
+    <text x="0" y="8" font-family="monospace" font-size="24" fill="url(#nodeGradient2)" text-anchor="middle">🌙</text>
+
+    <!-- Label -->
+    <text x="0" y="-45" font-family="'Fira Code', monospace" font-size="13" font-weight="bold" fill="url(#nodeGradient2)" text-anchor="middle">
+      MOONLIGHT_DEV
+    </text>
+    <text x="0" y="60" font-family="'Fira Code', monospace" font-size="10" fill="#8892a6" text-anchor="middle">
+      Multi-lingual
+    </text>
+    <text x="0" y="75" font-family="'Fira Code', monospace" font-size="10" fill="#8892a6" text-anchor="middle">
+      Builder
+    </text>
+  </g>
+
+  <!-- Node 4: Dad Mode -->
+  <g transform="translate(900, 125)">
+    <circle cx="0" cy="0" r="25" fill="url(#nodeGradient3)" filter="url(#nodeGlow)" opacity="0.8">
+      <animate attributeName="r" values="25;28;25" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="20" fill="#0d1117" stroke="url(#nodeGradient3)" stroke-width="2"/>
+    <text x="0" y="8" font-family="monospace" font-size="24" fill="url(#nodeGradient3)" text-anchor="middle">👨‍👧</text>
+
+    <!-- Label -->
+    <text x="0" y="-45" font-family="'Fira Code', monospace" font-size="13" font-weight="bold" fill="url(#nodeGradient3)" text-anchor="middle">
+      DAD_MODE
+    </text>
+    <text x="0" y="60" font-family="'Fira Code', monospace" font-size="10" fill="#8892a6" text-anchor="middle">
+      Building for
+    </text>
+    <text x="0" y="75" font-family="'Fira Code', monospace" font-size="10" fill="#8892a6" text-anchor="middle">
+      Her Future
+    </text>
+  </g>
+
+  <!-- Node 5: Creator Economy -->
+  <g transform="translate(1050, 125)">
+    <circle cx="0" cy="0" r="25" fill="url(#nodeGradient4)" filter="url(#nodeGlow)" opacity="0.8">
+      <animate attributeName="r" values="25;28;25" dur="3s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="20" fill="#0d1117" stroke="url(#nodeGradient4)" stroke-width="2"/>
+    <text x="0" y="8" font-family="monospace" font-size="24" fill="url(#nodeGradient4)" text-anchor="middle">🚀</text>
+
+    <!-- Label -->
+    <text x="0" y="-45" font-family="'Fira Code', monospace" font-size="13" font-weight="bold" fill="url(#nodeGradient4)" text-anchor="middle">
+      BUILDING
+    </text>
+    <text x="0" y="60" font-family="'Fira Code', monospace" font-size="10" fill="#8892a6" text-anchor="middle">
+      Creator
+    </text>
+    <text x="0" y="75" font-family="'Fira Code', monospace" font-size="10" fill="#8892a6" text-anchor="middle">
+      Economy Tools
+    </text>
+  </g>
+
+  <!-- Data flow particles along timeline -->
+  <circle cx="100" cy="125" r="3" fill="#00FF88" opacity="0.8">
+    <animate attributeName="cx" values="100;1100" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0;0.8" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="125" r="2" fill="#00D9FF" opacity="0.6">
+    <animate attributeName="cx" values="100;1100" dur="10s" begin="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0;0.6" dur="10s" repeatCount="indefinite"/>
+  </circle>
+</svg>

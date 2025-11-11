@@ -1,0 +1,163 @@
+<svg width="1200" height="200" viewBox="0 0 1200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="statusGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7289DA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BD00FF;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FF88;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00D9FF;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF5F56;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF9500;stop-opacity:1" />
+    </linearGradient>
+
+    <filter id="statusGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="200" fill="#0a0e27" opacity="0.3"/>
+  <rect x="2" y="2" width="1196" height="196" rx="8" fill="#0d1117" stroke="url(#statusGradient)" stroke-width="2" opacity="0.9"/>
+
+  <!-- Header -->
+  <text x="40" y="45" font-family="'Fira Code', monospace" font-size="24" font-weight="bold" fill="url(#statusGradient)" filter="url(#statusGlow)">
+    STATUS.log()
+  </text>
+
+  <!-- Terminal-style status indicators -->
+  <g transform="translate(40, 70)">
+    <!-- Row 1 -->
+    <g>
+      <text x="0" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#6272a4">
+        [
+      </text>
+      <circle cx="16" cy="-5" r="4" fill="#00FF88">
+        <animate attributeName="opacity" values="1;0.5;1" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="25" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#6272a4">
+        ]
+      </text>
+      <text x="40" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#00FF88">
+        learning:
+      </text>
+      <text x="150" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#00D9FF">
+        ACTIVE
+      </text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0, 35)">
+      <text x="0" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#6272a4">
+        [
+      </text>
+      <circle cx="16" cy="-5" r="4" fill="#00FF88">
+        <animate attributeName="opacity" values="1;0.5;1" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+      </circle>
+      <text x="25" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#6272a4">
+        ]
+      </text>
+      <text x="40" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#00FF88">
+        building:
+      </text>
+      <text x="150" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#00D9FF">
+        IN_PRIVATE
+      </text>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(0, 70)">
+      <text x="0" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#6272a4">
+        [
+      </text>
+      <circle cx="16" cy="-5" r="4" fill="#00FF88">
+        <animate attributeName="opacity" values="1;0.5;1" dur="1.5s" begin="0.6s" repeatCount="indefinite"/>
+      </circle>
+      <text x="25" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#6272a4">
+        ]
+      </text>
+      <text x="40" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#00FF88">
+        dad_mode:
+      </text>
+      <text x="150" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#BD00FF">
+        ALWAYS_ON 💗
+      </text>
+    </g>
+  </g>
+
+  <!-- Right side - Response time info -->
+  <g transform="translate(450, 70)">
+    <!-- Response time -->
+    <g>
+      <text x="0" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#6272a4">
+        [
+      </text>
+      <circle cx="16" cy="-5" r="4" fill="#FFBD2E">
+        <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="25" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#6272a4">
+        ]
+      </text>
+      <text x="40" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#FFBD2E">
+        response_time:
+      </text>
+      <text x="210" y="0" font-family="'Fira Code', monospace" font-size="13" fill="#8892a6">
+        TODDLER_DEPENDENT
+      </text>
+    </g>
+
+    <!-- Best reach time -->
+    <g transform="translate(0, 35)">
+      <text x="0" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#6272a4">
+        [
+      </text>
+      <circle cx="16" cy="-5" r="4" fill="#00D9FF">
+        <animate attributeName="opacity" values="1;0.5;1" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="25" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#6272a4">
+        ]
+      </text>
+      <text x="40" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#00D9FF">
+        best_reach:
+      </text>
+      <text x="210" y="0" font-family="'Fira Code', monospace" font-size="13" fill="#8892a6">
+        NAP_TIME 🌙
+      </text>
+    </g>
+
+    <!-- Updates -->
+    <g transform="translate(0, 70)">
+      <text x="0" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#6272a4">
+        [
+      </text>
+      <circle cx="16" cy="-5" r="4" fill="#BD00FF">
+        <animate attributeName="opacity" values="1;0.5;1" dur="2s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+      <text x="25" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#6272a4">
+        ]
+      </text>
+      <text x="40" y="0" font-family="'Fira Code', monospace" font-size="14" fill="#BD00FF">
+        updates:
+      </text>
+      <text x="210" y="0" font-family="'Fira Code', monospace" font-size="13" fill="#8892a6">
+        WHEN_STARS_ALIGN ⭐
+      </text>
+    </g>
+  </g>
+
+  <!-- Bottom message -->
+  <g transform="translate(600, 175)">
+    <text x="0" y="0" font-family="'Fira Code', monospace" font-size="11" fill="#6272a4" text-anchor="middle">
+      // baby boss always wins
+    </text>
+  </g>
+</svg>
