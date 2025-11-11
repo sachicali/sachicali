@@ -1,8 +1,6 @@
 <div align="center">
-  
-![Header](https://cdn.calicreatives.co/assets/Mix%20Header.svg)
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=A9FEF7&center=true&vCenter=true&width=940&lines=Hi%2C+I'm+CHI!+🌙;Creative+Director+by+Day%2C+Dev+by+Moonlight+✨;Building+the+Creator+Economy+🎨;Proud+Dad+to+my+Little+Star+🌟;AI+%2B+Design+%2B+Code+%3D+Magic+💫" alt="Typing SVG" />
+![Header](./profile-header.svg)
 
 <br/>
 
